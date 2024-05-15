@@ -7,7 +7,7 @@ docs_file: "website.min"
 
 markdown: kramdown
 permalink: pretty
-url: https://bulma.io
+url: https://nominsang.cn/bulma
 exclude:
   [
     ".babelrc",

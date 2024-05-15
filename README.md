@@ -1,4 +1,7 @@
-# [Bulma](https://bulma.io)
+# [Bulmav](https://nominsang.cn/bulma)
+
+Bulmav 是基于 CSS 逻辑属性对 Bulma 的改造，目的就是为了能够打造能够全面应对各种
+书写布局的 CSS 框架。
 
 Bulma is a **modern CSS framework** based on [Flexbox](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Using_CSS_flexible_boxes).
 
