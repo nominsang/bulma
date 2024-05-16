@@ -343,7 +343,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   if ($highlights.length > 0) {
     $highlights.forEach(($el) => {
-      const copyEl = '<button class="button bd-copy">Copy</button>';
+      const copyEl = '<button class="button bd-copy">复制</button>';
       // const expandEl =
       //   '<button class="button is-small bd-expand">Expand</button>';
       $el.insertAdjacentHTML("beforeend", copyEl);
@@ -352,7 +352,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
       if ($parent && $parent.classList.contains("bd-is-more")) {
         const showEl =
-          '<button class="button is-small bd-show"><span class="icon"><i class="fas fa-code"></i></span><strong>Show code</strong></button>';
+          '<button class="button is-small bd-show"><span class="icon"><i class="fas fa-code"></i></span><strong>显示代码</strong></button>';
         $parent.insertAdjacentHTML("afterbegin", showEl);
       }
 

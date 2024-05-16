@@ -126,8 +126,8 @@
       "path": "/documentation/start/overview/"
     },
     "start-installation": {
-      "name": "Installation",
-      "subtitle": "Create your <strong>own theme</strong> with a simple set of <strong>variables</strong>",
+      "name": "安装",
+      "subtitle": "用一组简单的<strong>变量</strong>创建您<strong>自己的专属主题</strong>",
       "color": "start",
       "icon": "fa-solid fa-download",
       "path": "/documentation/start/installation/"
