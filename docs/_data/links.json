@@ -147,8 +147,8 @@
       "path": "/documentation/start/syntax/"
     },
     "start-modular": {
-      "name": "Modularity",
-      "subtitle": "Just import what you <strong>need</strong>",
+      "name": "模块化",
+      "subtitle": "只需导入<strong>所需</strong>",
       "color": "start",
       "icon": "fa-solid fa-cubes",
       "path": "/documentation/start/modular/"
