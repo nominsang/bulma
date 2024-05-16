@@ -17,22 +17,21 @@
     include docs/components/heading.html
     color=theme
     icon="fas fa-columns"
-    title="The <strong>simplest</strong> grid system"
-    subtitle="Just add columns, they will <strong>resize themselves</strong>"
+    title="<strong>最简单</strong>的网格系统"
+    subtitle="只需添加 column，他们会<strong>自行调整</strong>"
     href=heading_href
     button_icon_after="fas fa-arrow-right"
-    button_label="See <strong>columns</strong> docs"
+    button_label="查看 <strong>columns</strong> 文档"
   %}
 
   <div class="container">
     <div class="message is-warning is-hidden-tablet">
       <p class="message-header">
-        Better on desktop
+        最好在桌面系统上
       </p>
       <p class="message-body">
-        This interactive tool works better on larger screens! That's because
-        Bulma columns are <strong>vertical by default</strong>. I recommend
-        revisiting this page later when you're on desktop. 😉
+        此互动工具在大屏运行良好！这是因为 Bulma column <strong>默认垂直</strong>叠放。
+        我推荐当您在桌面系统时再放问此页。😉
       </p>
     </div>
 
@@ -103,10 +102,10 @@
       <div class="bd-columns-tool bd-is-try">
         <div class="buttons bd-has-drawing">
           <a id="add" class="button is-medium is-{{ theme }} is-unselectable">
-            <strong>Add column</strong>
+            <strong>添加 column</strong>
           </a>
           <a id="remove" class="button is-medium is-unselectable">
-            <strong>Remove</strong>
+            <strong>删除</strong>
           </a>
           {% include docs/elements/drawing.html id='try-it-out' width=150 height=65
           %}
@@ -122,10 +121,8 @@
 
     <div id="message" class="message is-info">
       <p class="message-body">
-        While it's possible to add as many columns as you want, it is
-        recommended to stick with <strong>12 columns</strong>.<br />
-        If you want smaller divisions, you can always
-        <strong>nest</strong> columns.
+        理论上您时可以添加任意数目的 column，但是推荐至多使用 <strong>12 column</strong>。<br />
+        如果您想要更加细分，可以使用 <strong>嵌入（nest）</strong> column。
       </p>
     </div>
   </div>

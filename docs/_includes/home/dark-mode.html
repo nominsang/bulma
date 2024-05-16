@@ -3,9 +3,9 @@
 
 {% capture bulma_theme %}
 <div>
-  <h1 class="title">Bulma Theme</h1>
+  <h1 class="title">Bulma 主题色</h1>
   <h2 class="subtitle">
-    System Theme with <code>prefers-color-scheme</code>
+    系统主题色系为 <code>prefers-color-scheme</code>
   </h2>
 </div>
 {% endcapture %}
@@ -15,12 +15,12 @@
   <h1 class="title">Bulma</h1>
 
   <p class="subtitle">
-    Modern CSS framework based on <a href="https://bulma.io">Flexbox</a>
+    基于 <a href="https://bulma.io">Flexbox</a> 的现代 CSS 框架
   </p>
 
   <div class="message is-success">
     <div class="message-body">
-      Changes successfully saved
+      修改已经成功保存
     </div>
   </div>
 
@@ -30,22 +30,22 @@
 
   <div class="field">
     <div class="select">
-      <select><option>Select dropdown</option></select>
+      <select><option>下来菜单选单</option></select>
     </div>
   </div>
 
   <div class="buttons">
-    <a class="button is-link is-soft">Save Changes</a>
-    <a class="button is-danger is-soft">Cancel</a>
+    <a class="button is-link is-soft">保存修改</a>
+    <a class="button is-danger is-soft">取消</a>
   </div>
 </div>
 {% endcapture %}
 
 {% capture light_theme %}
 <div data-theme="light">
-  <h1 class="title">Light Theme</h1>
+  <h1 class="title">亮色系</h1>
   <h2 class="subtitle">
-    Light Theme with <code>[data-theme=light]</code>
+    亮色系使用 <code>[data-theme=light]</code>
   </h2>
 </div>
 {% endcapture %}
@@ -55,11 +55,11 @@
     include docs/components/heading.html
     color="moon"
     icon="fas fa-moon"
-    title="Dark Mode"
-    subtitle="Choose a dark theme automatically or by user preference"
+    title="暗色模式"
+    subtitle="自动选择暗色模式或者通过用户设置选择"
     href=heading_href
     button_icon_after="fas fa-arrow-right"
-    button_label="See <strong>Dark Mode</strong> docs"
+    button_label="查看 <strong>暗色模式</strong> 文档"
   %}
 
   <!--div class="bd-home-themes js-themes">
