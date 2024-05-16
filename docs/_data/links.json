@@ -7,8 +7,8 @@
     },
     "docs": {
       "name": "Docs",
-      "long_name": "Documentation",
-      "subtitle": "Everything you need to <strong>create a website</strong> with Bulma",
+      "long_name": "文档",
+      "subtitle": "用 Bulma <strong>创建一个站点</strong>的全部知识",
       "color": "primary",
       "icon": "fa-solid fa-book",
       "path": "/documentation/"
@@ -112,8 +112,8 @@
       "path": "/backers/"
     },
     "start": {
-      "name": "Start",
-      "subtitle": "An overview of what Bulma as a <strong>framework</strong> is all about",
+      "name": "起步",
+      "subtitle": "Bulma 作为一个<strong>框架</strong>的初步概览",
       "color": "start",
       "icon": "fa-solid fa-arrow-right",
       "path": "/documentation/start/"
