@@ -134,14 +134,14 @@
     },
     "start-alternative-versions": {
       "name": "备选版本",
-      "subtitle": "使用 Bulma <strong>预制</strong>的备选版本",
+      "subtitle": "使用 Bulma <strong>预制</strong>备选版本",
       "color": "start",
       "icon": "fa-solid fa-download",
       "path": "/documentation/start/alternative-versions/"
     },
     "start-syntax": {
-      "name": "Syntax",
-      "subtitle": "<strong>How to use</strong> Bulma components and their alternative styles",
+      "name": "语法",
+      "subtitle": "<strong>如何用</strong> Bulma 组件和它们的替代样式",
       "color": "start",
       "icon": "fa-solid fa-code",
       "path": "/documentation/start/syntax/"
