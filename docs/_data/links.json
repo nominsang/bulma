@@ -133,8 +133,8 @@
       "path": "/documentation/start/installation/"
     },
     "start-alternative-versions": {
-      "name": "Alternative Versions",
-      "subtitle": "Use one of the <strong>pre-built</strong> alternative versions of Bulma",
+      "name": "备选版本",
+      "subtitle": "使用 Bulma <strong>预制</strong>的备选版本",
       "color": "start",
       "icon": "fa-solid fa-download",
       "path": "/documentation/start/alternative-versions/"
