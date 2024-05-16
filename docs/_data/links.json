@@ -119,8 +119,8 @@
       "path": "/documentation/start/"
     },
     "start-overview": {
-      "name": "Overview",
-      "subtitle": "You only need <strong>1 CSS file</strong> to use Bulma",
+      "name": "概览",
+      "subtitle": "使用 Bulma 您只需 <strong>1 个 CSS 文件</strong>",
       "color": "start",
       "icon": "fa-regular fa-eye",
       "path": "/documentation/start/overview/"
