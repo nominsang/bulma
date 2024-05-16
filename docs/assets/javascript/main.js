@@ -396,7 +396,7 @@ document.addEventListener("DOMContentLoaded", () => {
     $highlightShows.forEach(($el) => {
       $el.addEventListener("click", () => {
         const text = $el.querySelector("strong").textContent;
-        const newText = text === "Show code" ? "Hide code" : "Show code";
+        const newText = text === "显示代码" ? "隐藏代码" : "显示代码";
         $el.querySelector("strong").textContent = newText;
         $el.parentNode.classList.toggle("bd-is-more-clipped");
       });
