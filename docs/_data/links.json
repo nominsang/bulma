@@ -161,15 +161,15 @@
       "path": "/documentation/start/responsiveness/"
     },
     "start-migrating": {
-      "name": "Migrating to v1",
-      "subtitle": "How to <strong>migrate</strong> to Bulma v1",
+      "name": "迁移到 v1",
+      "subtitle": "如何<strong>迁移</strong>到 Bulma v1",
       "color": "start",
       "icon": "fa-solid fa-arrow-up",
       "path": "/documentation/start/migrating-to-v1/"
     },
     "features": {
-      "name": "Features",
-      "subtitle": "What makes Bulma <strong>special</strong>",
+      "name": "特色",
+      "subtitle": "是什么使得 Bulma <strong>独一无二</strong>",
       "color": "danger",
       "icon": "fa-solid fa-wand-magic-sparkles",
       "path": "/documentation/features/"

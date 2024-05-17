@@ -7,11 +7,11 @@
           <th style="width: 20%;">
             {{ breakpoint.name }}<br>
             {% if breakpoint.id == 'mobile' %}
-              Up to <code>{{ breakpoint.to }}px</code>
+              上至 <code>{{ breakpoint.to }}px</code>
             {% elsif breakpoint.id == 'fullhd' %}
-              <code>{{ breakpoint.from }}px</code> and above
+              <code>{{ breakpoint.from }}px</code> 及以上
             {% else %}
-              Between <code>{{ breakpoint.from }}px</code> and <code>{{ breakpoint.to }}px</code>
+              在 <code>{{ breakpoint.from }}px</code> 和 <code>{{ breakpoint.to }}px 之间</code>
             {% endif %}
           </th>
         {% endfor %}

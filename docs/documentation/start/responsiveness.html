@@ -27,17 +27,16 @@ $fullhd-enabled: false;
     Bulma 中每个元素都是<strong>移动设备优先</strong>并且针对<strong>垂直阅读</strong>进行了优化，所以说默认在移动设备使用：
   </p>
   <ul>
-    <li><code>columns</code> are stacked vertically</li>
-    <li>the <code>level</code> component will show its children stacked vertically</li>
-    <li>the <code>nav</code> menu will be hidden</li>
+    <li><code>columns</code> 会垂直堆叠</li>
+    <li><code>level</code> 组件会垂直堆叠显示其子元素</li>
+    <li><code>nav</code> 菜单会隐藏</li>
   </ul>
   <p>
-    You can however enforce the <strong>horizontal</strong> layout for both <code>columns</code> or
-    <code>level</code> by appending the <code>is-mobile</code> modifier.
+    您可以通过使用 <code>is-mobile</code> 修饰符强制 <code>columns</code> 或 <code>level</code> 使用 <strong>horizontal（水平）</strong>布局。
   </p>
 </div>
 
-{% include docs/elements/anchor.html name="Breakpoints" %}
+{% include docs/elements/anchor.html name="断点（Breakpoint）" %}
 {% assign variables_file_url = '/blob/master/sass/utilities/initial-variables.sass#L56,L64'
   | prepend: site.data.meta.github
 %}
@@ -45,8 +44,8 @@ $fullhd-enabled: false;
 
 <div class="content">
   <p>
-    Bulma has
-    <a href="{{ variables_file_url }}" target="_blank">4 breakpoints</a> which defines <strong>5 screen sizes</strong>:
+    Bulma 用
+    <a href="{{ variables_file_url }}" target="_blank">4 个断点</a>定义了 <strong>5 个屏幕尺寸</strong>：
   </p>
   <ul>
     {% for breakpoint_hash in site.data.breakpoints %}
@@ -54,17 +53,17 @@ $fullhd-enabled: false;
       <li>
         <code>{{ breakpoint.id }}</code>:
         {% if breakpoint.id == 'mobile' -%}
-          up to <code>{{ breakpoint.to }}px</code>
+          上至 <code>{{ breakpoint.to }}px</code>
         {%- else -%}
-          from <code>{{ breakpoint.from }}px</code>
+          下至 <code>{{ breakpoint.from }}px</code>
         {%- endif %}
       </li>
     {% endfor %}
   </ul>
 
   <p>
-    To make use of these breakpoints, Bulma provides
-    <a href="{{ site.url }}/documentation/utilities/responsive-mixins/">9 responsive mixins</a>.
+    利用这些断点，Bulma 提供了
+    <a href="{{ site.url }}/documentation/sass/responsive-mixins/">9 种自适应混入（mixin）</a>。
   </p>
 </div>
 
@@ -73,22 +72,21 @@ $fullhd-enabled: false;
 
 <div class="content">
   <p>
-    To simplify using these breakpoints, Bulma provides
-    <a href="{{ site.url }}{{ urm_link.path }}">easy-to-use responsive mixins</a>.
+    简化使用这些断点，Bulma 提供了
+    <a href="{{ site.url }}{{ urm_link.path }}">易用自适应混入</a>。
   </p>
 </div>
 
 {% assign vernum = site.data.meta.version | downcase | remove: '.' | plus: 0 %}
 {% if vernum >= 70 %}
   {%
-    include docs/elements/anchor.html name="Disabling
-    breakpoints"
+    include docs/elements/anchor.html name="关闭断点"
   %}
 
   <div class="content">
     <p>
-      By default, the <code>$widescreen</code> and <code>$fullhd</code> breakpoints are <strong>enabled</strong>. You
-      can disable them by setting the corresponding Sass boolean to <code>false</code>:
+      默认 <code>$widescreen</code> 和 <code>$fullhd</code> 断点是<strong>启用</strong>的。
+      您可以通过设置相关 Sass 值为 <code>false</code> 关闭：
     </p>
   </div>
 
@@ -100,9 +98,8 @@ $fullhd-enabled: false;
 {% endif %}
 
 {% capture custom_message %}
-These are
-<a href="{{ derived_variables.file_url }}" target="_blank">variables</a> with a
-value that <strong>references</strong> another variable.
+有些
+<a href="{{ derived_variables.file_url }}" target="_blank">变量</a>和值可<strong>参考</strong>其它变量。
 {% endcapture %}
 
 {%

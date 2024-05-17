@@ -1,9 +1,9 @@
 ---
-title: Migrating to Bulma v1
+title: 迁移到 Bulma v1
 layout: docs
 theme: start
-doc-tab: start
-doc-subtab: migrating
+doc-tab: 起步
+doc-subtab: 迁移
 breadcrumb:
   - home
   - documentation
@@ -12,58 +12,58 @@ breadcrumb:
 ---
 
 {% capture markdown %}
-Bulma v1 is basically a **full rewrite** of the framework using [**Dart Sass**](https://sass-lang.com/dart-sass/), which is the primary implementation of Sass. While this affects a few development details, everything has been done to make the transition **as easy as possible**.
+Bulma v1 是一个用 [**Dart Sass**](https://sass-lang.com/dart-sass/)（该系统是 Sass 的基本扩展）**完全重写**的框架。这可能会影响一些开发细节，但一切已做好准备，确保**平滑**迁移。
 {% endcapture %}
 
 {% include markdown.html content=markdown %}
 
-{% include docs/elements/anchor.html name="What remains the same" %}
+{% include docs/elements/anchor.html name="相同点" %}
 
 {% capture markdown %}
-**All HTML snippets are the same**. This means you don't need to update your markup. **This is important** because it means, if you're using Bulma straight "out of the box", you don't need to change anything.
+**所有 HTML 代码片段不变**。这就是说您不需要更新您的网页内容。**这很重要**因为这意味着如果您在使用 Bulma 的“开箱即用”，您就不需要做任何修改。
 
-You can just swap `bulma@0.9.4/css/bulma.min.css` with `bulma@1.0.0/css/bulma.min.css` and everything will work. Things will look slightly different, but they will still work.
+您只需将 `bulma@0.9.4/css/bulma.min.css` 改成 `bulma@1.0.0/css/bulma.min.css` 即可。可能看起来略有不同，但正常显示没问题。
 {% endcapture %}
 
 {% include markdown.html content=markdown %}
 
-{% include docs/elements/anchor.html name="What changes" %}
+{% include docs/elements/anchor.html name="不同点" %}
 
 {% capture markdown %}
-* [**Dart Sass**](https://sass-lang.com/dart-sass/) is used to build Bulma
-  * if you use the `sass` npm package, you're already using Dart Sass
-* [**CSS Variables**]({{ site.data.links.by_id['features-css-variables'].path }}) are used instead of literals: `color: var(--bulma-primary);` instead of `color: hsl(171deg, 100%, 41%);`, which means you can customize Bulma with CSS only (without using Sass)
-* Customization by setting your own value for Sass variables works differently. See [how to customize Bulma with Sass]({{ site.data.links.by_id['customize-with-sass'].path }}).
+* [**Dart Sass**](https://sass-lang.com/dart-sass/) 用于构建 Bulma
+  * 如果您用 `sass` npm 包，您已经在用 Dart Sass
+* [**CSS 变量**]({{ site.data.links.by_id['features-css-variables'].path }}) 替换了字面变量：`color: var(--bulma-primary);` 不再用 `color: hsl(171deg, 100%, 41%);`，这意味着您可以定制 Bulma，只需用 CSS（而不是 Sass）
+* 通过设置自己的 Sass 变量值定制的方式不同。查阅[如何用 Sass 定制 Bulma]({{ site.data.links.by_id['customize-with-sass'].path }})。
 {% endcapture %}
 
 {% include markdown.html content=markdown %}
 
-{% include docs/elements/anchor.html name="What's new (i.e. did not exist before)" %}
+{% include docs/elements/anchor.html name="上新功能（以前没有）" %}
 
 {% capture markdown %}
-* The notion of [**Themes**]({{ site.data.links.by_id['features-themes'].path }}) is introduced: a theme is a collection of CSS variables within a context, and is the best approach to customize Bulma
-* As a result, a Theme for [**Dark Mode**]({{ site.data.links.by_id['features-dark-mode'].path }}) is included
-* [**Color Palettes**]({{ site.data.links.by_id['features-color-palettes'].path }}) are created for each of the 7 primary colors
-* [**Skeleton loaders**]({{ site.data.links.by_id['features-skeletons'].path }}) exist as standalone components but also as variants of other components
-* You can add a **prefix** to all your Bulma classes so that `.button` becomes `.my-prefix-button`
-  * a pre-built prefixed version exists as one of the [**alternative versions**]({{ site.data.links.by_id["start-alternative-versions"].path }})
+* [**主题**]({{ site.data.links.by_id['features-themes'].path }})概念介入：一个主题就是一组相关的 CSS 变量集合，而且是可定制的
+* 所以，增加了[**暗色模式**]({{ site.data.links.by_id['features-dark-mode'].path }})主题
+* [**调色板**]({{ site.data.links.by_id['features-color-palettes'].path }})针对 7 种主色创建
+* [**框架预览**]({{ site.data.links.by_id['features-skeletons'].path }}) 作为一个独立组件出现，但是也会根据其他组件提供变体
+* 您可以为您的所有 Bulma 类添加一个**前缀**，所以 `.button` 变成了 `.my-prefix-button`
+  * 一个预制前缀版作为[**备选版本**]({{ site.data.links.by_id["start-alternative-versions"].path }})之一出现
 {% endcapture %}
 
 {% include markdown.html content=markdown %}
 
-{% include docs/elements/anchor.html name="Breaking Changes" %}
+{% include docs/elements/anchor.html name="重大变更" %}
 
 <table class="table is-bordered">
   <thead>
     <tr>
-      <th>⛔️ Deprecated</th>
-      <th>✅ How to fix</th>
+      <th>⛔️ 弃用</th>
+      <th>✅ 如何修复</th>
     </tr>
   </thead>
   <tbody>
     <tr>
       <td>
-        <p class="mb-2"><strong>Tiles</strong> are deprecated</p>
+        <p class="mb-2"><strong>Tile</strong> 已弃用</p>
 {% highlight html %}
 <!-- Before -->
 <div class="tile is-ancestor">
@@ -83,7 +83,7 @@ You can just swap `bulma@0.9.4/css/bulma.min.css` with `bulma@1.0.0/css/bulma.mi
 {% endhighlight %}
       </td>
       <td>
-        <p class="mb-2">Use the new and improved <a href="/documentation/grid/smart-grid/">Smart Grid</a></p>
+        <p class="mb-2">使用新的和升级的 <a href="/documentation/grid/smart-grid/">Smart Grid</a></p>
 {% highlight html %}
 <!-- After -->
 <div class="grid">
@@ -105,7 +105,7 @@ You can just swap `bulma@0.9.4/css/bulma.min.css` with `bulma@1.0.0/css/bulma.mi
     </tr>
     <tr>
       <td>
-        <p class="mb-2"><code>@import</code> is not recommended</p>
+        <p class="mb-2"><code>@import</code> 不再推荐使用</p>
         {% highlight sass %}
 // Before
 $purple: #8A4D76;
@@ -132,7 +132,7 @@ $input-shadow: none;
         {% endhighlight %}
       </td>
       <td>
-        <p class="mb-2">Use Dart Sass's new <a href="https://sass-lang.com/documentation/at-rules/use/"><code>@use</code> and <code>@forward</code> keywords</a></p>
+        <p class="mb-2">使用 Dart Sass's 的新 <a href="https://sass-lang.com/documentation/at-rules/use/"><code>@use</code> 和 <code>@forward</code> 关键词</a></p>
 {% highlight sass %}
 // After
 $purple: #8a4d76;

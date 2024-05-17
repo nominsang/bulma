@@ -1,10 +1,10 @@
 ---
-title: CSS Variables in Bulma
+title: Bulma 的 CSS 变量
 layout: docs
 markdown: true
 theme: features
-doc-tab: features
-doc-subtab: css-variables
+doc-tab: 特色
+doc-subtab: css-变量
 breadcrumb:
   - home
   - documentation
