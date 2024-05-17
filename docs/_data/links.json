@@ -189,8 +189,8 @@
       "path": "/documentation/features/color-palettes/"
     },
     "features-css-variables": {
-      "name": "CSS Variables",
-      "subtitle": "Customizing with <strong>CSS only</strong>",
+      "name": "CSS 变量",
+      "subtitle": "定制<strong>只需 CSS</strong>",
       "color": "danger",
       "icon": "fa-brands fa-css3",
       "path": "/documentation/features/css-variables/"
@@ -224,8 +224,8 @@
       "path": "/documentation/features/smart-grid/"
     },
     "features-themes": {
-      "name": "Themes",
-      "subtitle": "How Bulma styles its components with <strong>CSS variables</strong>",
+      "name": "主题",
+      "subtitle": "Bulma 如何用 <strong>CSS 变量</strong>美化其组件",
       "color": "danger",
       "icon": "fa-solid fa-palette",
       "path": "/documentation/features/themes/"

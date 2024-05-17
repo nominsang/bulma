@@ -12,9 +12,9 @@ breadcrumb:
   - features-css-variables
 ---
 
-All Bulma components are styled using **CSS Variables** (which are also called CSS custom properties). [Read more about them on the MDN Reference](https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties).
+所有 Bulma 组件由 **CSS 变量**（也叫做 CSS 定制属性）美化。[更多相关信息参阅 MDN 参考](https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties)。
 
-For example, here is how the `.title` element is styled:
+例如：`.title` 元素是如何美化的：
 
 ```css
 .title {
@@ -25,14 +25,14 @@ For example, here is how the `.title` element is styled:
 }
 ```
 
-## Scope
+## 作用域
 
-Bulma CSS variables are either defined:
+Bulma CSS 变量定义：
 
-- at the **global** scope `:root`
-- at the **component** scope, like `.button`
+- 在**全局（global）**范围 `:root`
+- 在**组件（component）**范围，如 `.button`
 
-CSS Variables defined at a more specific scope (like `.button`) will override the ones defined at a more global scope.
+CSS 变量在特定域范围（如 `.button`）的值会覆盖其在全局范围域的值。
 
 ```css
 :root {
@@ -46,13 +46,13 @@ CSS Variables defined at a more specific scope (like `.button`) will override th
 }
 ```
 
-## Prefix
+## 前缀（Prefix）
 
-All Bulma CSS variables are prefixed with `bulma-` (including the dash). You will notice theme when inspecting a webpage:
+所有 Bulma CSS 变量都有前缀 `bulma-`（包括短横）。当您查看网页的时候会看到：
 
 <img src="/assets/images/content-inspect.png" alt="Inspect CSS variables" width="640" height="340">
 
-This prefix can be changed by setting the `$cssvars-prefix` Sass variable:
+该前缀可以通过设置 Sass 变量 `$cssvars-prefix` 修改：
 
 ```scss
 @use "bulma/sass" with (
@@ -60,12 +60,12 @@ This prefix can be changed by setting the `$cssvars-prefix` Sass variable:
 );
 ```
 
-## Themes
+## 主题（Theme）
 
-The global CSS variables defined at the `:root` level are what defines a **Bulma theme**. Think of a theme as simply a collection of CSS variables.
+全局 CSS 变量定义在 `:root` 级别，这就定义了 **Bulma 主题**。一款主题其实就是一组 CSS 变量的集合。
 
 <p>
   <a href="{{ site.url }}/documentation/features/themes/">
-    Read more about Themes
+    阅读更多关于主题信息
   </a>
 </p>
