@@ -1,9 +1,9 @@
 ---
-title: Modularity in Bulma
+title: Bulma 的模块化
 layout: docs
 theme: start
-doc-tab: start
-doc-subtab: modular
+doc-tab: 起步
+doc-subtab: 模块化
 breadcrumb:
   - home
   - documentation
@@ -60,54 +60,53 @@ breadcrumb:
 
 <div class="content">
   <p>
-    Bulma consists of elements and components defined in dozens of <code>.scss</code> files, that you can <a href="https://sass-lang.com/documentation/at-rules/use/">load individually with the <code>@use</code> keyword</a>.
+    Bulma 的元素和组件在大量的 <code>.scss</code> 文件中定义，这些文件您可以 <a href="https://sass-lang.com/documentation/at-rules/use/">通过使用 <code>@use</code> 关键词单独加载</a>。
   </p>
 
   {% highlight sass %}{{ use_rule }}{% endhighlight %}
 
   <p>
-    While this will correctly load the target file's styles, most Bulma components rely on <strong>base styles</strong> and <strong>CSS variables</strong> defined by the default themes.
+    这将正确导入目标文件样式，绝大部分 Bulma 组件依赖默认主题中定义的 <strong>base style（基本样式）</strong>和 <strong>CSS 变量</strong>。
   </p>
 
   <p>
-    That is why it's preferable to <em>also</em> load the <code>sass/base</code> folder and the <code>sass/themes</code> folder:
+    这就是<em>也</em>需要导入 <code>sass/base</code> 文件夹和 <code>sass/themes</code> 文件夹的原因：
   </p>
 
   {% highlight sass %}{{ base_loads }}{% endhighlight %}
 </div>
 
-{% include docs/elements/anchor.html name="Importing columns" %}
+{% include docs/elements/anchor.html name="导入列（columns）" %}
 
 <div class="content">
   <p>
-    Layout features like Bulma's columns don't rely on CSS variables defined by Bulma themes. As a result, you can load them directly without requiring any additional file.
+    Bulma 的布局（Layout）功能不依赖主题的 CSS 变量。所以，可以直接加载而不需要其它文件。
   </p>
 
   <p>
-    For example, importing Bulma <strong>columns</strong> only requires to load the file located in the <code>bulma/sass/grid</code> folder.
+    例如：导入 Bulma <strong>columns</strong> 只需加载文件夹 <code>bulma/sass/grid</code>。
   </p>
 
   <p>
-    Simply <strong>load</strong> the <code>columns.scss</code> file with the <code>@use</code> keyword
+    简单的使用 <code>@use</code> 关键词<strong>加载</strong>文件 <code>columns.scss</code>
   </p>
   {% highlight sass %}{{ import }}{% endhighlight %}
   <p>
-    Now you can use the classes <code>.columns</code> (for the container) and
-    <code>.column</code> directly:
+    现在您就可以直接使用类 <code>.columns</code>（用于容器）和
+    <code>.column</code>：
   </p>
   {% highlight html %}{{ columns }}{% endhighlight %}
 </div>
 
-{% include docs/elements/anchor.html name="Importing Bulma elements and components" %}
+{% include docs/elements/anchor.html name="导入 Bulma 元素和组件" %}
 
 <div class="content">
   <p>
-    To load Bulma elements like the <code>.button</code> and components like the <code>.message</code>, it's preferable to also load the base styles and default themes.
-  </p>
+    要加载 Bulma 元素（如 <code>.button</code>）和组件（如 <code>.message</code>），要优先加载基本样式和默认主题。</p>
 
   {% highlight sass %}{{ only_button }}{% endhighlight %}
 
-  <p>You can now use the <code>.button</code> class, and all its modifiers:</p>
+  <p>现在您就可以使用 <code>.button</code> 类和它的修饰符了：</p>
   <ul>
     <li>
       <code>.is-active</code>
@@ -148,15 +147,15 @@ $section-padding-large: 18rem 6rem !default;
 );
 {% endcapture %}
 
-{% include docs/elements/anchor.html name="Importing with custom Sass variables" %}
+{% include docs/elements/anchor.html name="导入定制 Sass 变量" %}
 
 <div class="content">
   <p>
-    Most Bulma components are configured with Sass variables. For example, the <code>.section</code> layout component uses 4 variables to define its padding:
+    大部分 Bulma 组件使用 Sass 变量来设置。例如 <code>.section</code> 布局组件用 4 个变量定义其内边距（padding）：
   </p>
   {% highlight sass %}{{ configuration }}{% endhighlight %}
   <p>
-    The <code>@use</code> keyword allows use to configure a module when loading it with our own variables:
+    <code>@use</code> 关键词在加载时模块时允许使用我们自己的变量配置：
   </p>
   {% highlight sass %}{{ custom_section }}{% endhighlight %}
 </div>

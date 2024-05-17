@@ -154,8 +154,8 @@
       "path": "/documentation/start/modular/"
     },
     "start-responsiveness": {
-      "name": "Responsiveness",
-      "subtitle": "Bulma is a <strong>mobile-first</strong> framework",
+      "name": "自适应",
+      "subtitle": "Bulma 是一款<strong>移动设备优先</strong>的框架",
       "color": "start",
       "icon": "fa-solid fa-arrows-alt-h",
       "path": "/documentation/start/responsiveness/"
