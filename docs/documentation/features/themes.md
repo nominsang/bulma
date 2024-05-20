@@ -1,10 +1,10 @@
 ---
-title: Themes in Bulma
+title: Bulma 的主题
 layout: docs
 markdown: true
 theme: features
-doc-tab: features
-doc-subtab: themes
+doc-tab: 特色
+doc-subtab: 主题
 breadcrumb:
   - home
   - documentation
@@ -13,27 +13,27 @@ breadcrumb:
 ---
 
 
-In Bulma, a **theme** is a **collection** of CSS variables.
+在 Bulma 中，一个**主题**就是一**组** CSS 变量。
 
-Bulma comes with 2 themes:
+Bulma 自带 2 个主题：
 
-- `light.scss` (required)
-- `dark.scss` (optional)
+- `light.scss`（必备）
+- `dark.scss`（可选）
 
-## The default themes
+## 默认主题
 
-Because Bulma requires a default value for all CSS variables, it comes with a **default light theme** located at `/sass/themes/light.scss`.
+由于 Bulma 的所有 CSS 变量都有默认值，所以就有了基于 `/sass/themes/light.scss` 文件的**默认亮色主题**。
 
-It also comes with a **dark theme** located at `/sass/themes/dark.scss`.
+还有一个基于 `/sass/themes/dark.scss` 的**暗色主题**。
 
-The file `/sass/themes/_index.scss` takes care of including both themes, each in two ways:
+文件 `/sass/themes/_index.scss` 包含两个主题，每个都有两种方式：
 
-* with the `@media (prefers-color-scheme: $name)` media query
-* with an HTML attribute `[data-theme=$name]` and CSS class `.theme-$name` selector
+* 基于媒体查询的 `@media (prefers-color-scheme: $name)` 方式
+* 基于 HTML 属性 `[data-theme=$name]` 和 CSS 类 `.theme-$name` 选择器的方式
 
-The only difference is that the light theme is also defined at the top-level: `:root` (equivalent to the `html` element, the ancestor of all HTML elements on a webpage). This ensures that a **default** value is set for all CSS variables.
+唯一的不同点就是亮色模式已经在顶级属性中定义：`:root`（等同于 `html` 元素——网页中所有 HTML 元素的根元素）。这将确保为所有 CSS 变量设置了**默认**值。
 
-The CSS output of that theme resembles the following:
+主题的 CSS 设置大致如下：
 
 ```css
 :root {
@@ -63,21 +63,21 @@ The CSS output of that theme resembles the following:
 }
 ```
 
-## Creating a custom theme
+## 创建一个定制主题
 
-Creating a theme is essentially **setting your own CSS variables**. A custom theme requires:
+创建主题必须**设置您自己的 CSS 变量**。定制主题需要：
 
-* a name like `sunrise`
-* a scope like `:root`, `[data-theme=sunrise]`, `.theme-sunrise` or all three
-* a set of CSS variables and their new value
+* 主题名，如 `sunrise`
+* 主题域，如 `:root`, `[data-theme=sunrise]`, `.theme-sunrise` 或其它三种
+* 一组 CSS 变量以及值
 
-### Customizing in the browser
+### 在浏览器中定制
 
-If you set your CSS variables under the `:root` scope, you are **overwriting** Bulma's default theme. This can be done by with Sass or CSS.
+如果您设置您的 CSS 变量是 `:root` 范围的，您可以**复写** Bulma 默认主题。这可以通过 Sass 或 CSS 定制。
 
-To test out the CSS method, simply follow these steps:
+测试 CSS 方法，可以通过下面步骤：
 
-{% include docs/elements/step.html image="images/themes/step-1-inspect.png" content="Open your browser inspector" width=496 height=748 %}
-{% include docs/elements/step.html image="images/themes/step-2-html.png" content="Select the `html` element" width=528 height=232 %}
-{% include docs/elements/step.html image="images/themes/step-3-var.png" content="Insert a new value for the `--bulma-link-h` variable (the hue of the link color)" width=376 height=120 %}
-{% include docs/elements/step.html image="images/themes/step-4-menu.png" content="Notice how the CSS Helpers section in the side menu changes color" width=480 height=256 %}
+{% include docs/elements/step.html image="images/themes/step-1-inspect.png" content="打开浏览器的检查功能" width=496 height=748 %}
+{% include docs/elements/step.html image="images/themes/step-2-html.png" content="选择 `html` 元素" width=528 height=232 %}
+{% include docs/elements/step.html image="images/themes/step-3-var.png" content="插入一个新 `--bulma-link-h` 变量值（链接颜色的 hue 值）" width=376 height=120 %}
+{% include docs/elements/step.html image="images/themes/step-4-menu.png" content="注意侧栏菜单 CSS Helpers 部分的颜色变化" width=480 height=256 %}

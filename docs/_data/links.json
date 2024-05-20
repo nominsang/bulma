@@ -259,8 +259,8 @@
       "path": "/documentation/sass/functions/"
     },
     "sass-mixins": {
-      "name": "Mixins",
-      "subtitle": "Utility mixins for custom elements and other CSS helpers",
+      "name": "Mixin",
+      "subtitle": "用于定制元素和其他 CSS 辅助类的 mixin 工具",
       "color": "sass",
       "icon": "fa-solid fa-at",
       "path": "/documentation/sass/mixins/"
