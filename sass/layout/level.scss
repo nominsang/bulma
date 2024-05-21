@@ -63,7 +63,7 @@ $level-item-spacing: calc(#{cv.getVar("block-spacing")} * 0.5) !default;
 
   .#{iv.$class-prefix}title,
   .#{iv.$class-prefix}subtitle {
-    margin-bottom: 0;
+    margin-block-end: 0;
   }
 }
 

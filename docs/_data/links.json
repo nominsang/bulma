@@ -266,8 +266,8 @@
       "path": "/documentation/sass/mixins/"
     },
     "sass-responsive-mixins": {
-      "name": "Responsive mixins",
-      "subtitle": "Mixins that allows you to define different styles for each screen size",
+      "name": "自适应混入",
+      "subtitle": "Mixin 可以时因为不同大小的屏幕定义不同的样式",
       "color": "sass",
       "icon": "fa-solid fa-arrows-alt-h",
       "path": "/documentation/sass/responsive-mixins/"

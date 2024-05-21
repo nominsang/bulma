@@ -24,67 +24,67 @@ $column-gap: 1.5rem !default;
   .#{iv.$class-prefix}columns.#{iv.$class-prefix}is-mobile
     > &.#{iv.$class-prefix}is-narrow {
     flex: none;
-    width: unset;
+    inline-size: unset;
   }
 
   .#{iv.$class-prefix}columns.#{iv.$class-prefix}is-mobile
     > &.#{iv.$class-prefix}is-full {
     flex: none;
-    width: 100%;
+    inline-size: 100%;
   }
 
   .#{iv.$class-prefix}columns.#{iv.$class-prefix}is-mobile
     > &.#{iv.$class-prefix}is-three-quarters {
     flex: none;
-    width: calc(75% - calc(#{cv.getVar("column-gap")} / 2));
+    inline-size: calc(75% - calc(#{cv.getVar("column-gap")} / 2));
   }
 
   .#{iv.$class-prefix}columns.#{iv.$class-prefix}is-mobile
     > &.#{iv.$class-prefix}is-two-thirds {
     flex: none;
-    width: calc(66.6666% - calc(#{cv.getVar("column-gap")} / 2));
+    inline-size: calc(66.6666% - calc(#{cv.getVar("column-gap")} / 2));
   }
 
   .#{iv.$class-prefix}columns.#{iv.$class-prefix}is-mobile
     > &.#{iv.$class-prefix}is-half {
     flex: none;
-    width: calc(50% - calc(#{cv.getVar("column-gap")} / 2));
+    inline-size: calc(50% - calc(#{cv.getVar("column-gap")} / 2));
   }
 
   .#{iv.$class-prefix}columns.#{iv.$class-prefix}is-mobile
     > &.#{iv.$class-prefix}is-one-third {
     flex: none;
-    width: calc(33.3333% - calc(#{cv.getVar("column-gap")} / 2));
+    inline-size: calc(33.3333% - calc(#{cv.getVar("column-gap")} / 2));
   }
 
   .#{iv.$class-prefix}columns.#{iv.$class-prefix}is-mobile
     > &.#{iv.$class-prefix}is-one-quarter {
     flex: none;
-    width: calc(25% - calc(#{cv.getVar("column-gap")} / 2));
+    inline-size: calc(25% - calc(#{cv.getVar("column-gap")} / 2));
   }
 
   .#{iv.$class-prefix}columns.#{iv.$class-prefix}is-mobile
     > &.#{iv.$class-prefix}is-one-fifth {
     flex: none;
-    width: calc(20% - calc(#{cv.getVar("column-gap")} / 2));
+    inline-size: calc(20% - calc(#{cv.getVar("column-gap")} / 2));
   }
 
   .#{iv.$class-prefix}columns.#{iv.$class-prefix}is-mobile
     > &.#{iv.$class-prefix}is-two-fifths {
     flex: none;
-    width: calc(40% - calc(#{cv.getVar("column-gap")} / 2));
+    inline-size: calc(40% - calc(#{cv.getVar("column-gap")} / 2));
   }
 
   .#{iv.$class-prefix}columns.#{iv.$class-prefix}is-mobile
     > &.#{iv.$class-prefix}is-three-fifths {
     flex: none;
-    width: calc(60% - calc(#{cv.getVar("column-gap")} / 2));
+    inline-size: calc(60% - calc(#{cv.getVar("column-gap")} / 2));
   }
 
   .#{iv.$class-prefix}columns.#{iv.$class-prefix}is-mobile
     > &.#{iv.$class-prefix}is-four-fifths {
     flex: none;
-    width: calc(80% - calc(#{cv.getVar("column-gap")} / 2));
+    inline-size: calc(80% - calc(#{cv.getVar("column-gap")} / 2));
   }
 
   .#{iv.$class-prefix}columns.#{iv.$class-prefix}is-mobile
@@ -136,7 +136,7 @@ $column-gap: 1.5rem !default;
     .#{iv.$class-prefix}columns.#{iv.$class-prefix}is-mobile
       > &.#{iv.$class-prefix}is-#{$i} {
       flex: none;
-      width: calc(
+      inline-size: calc(
         math.percentage(math.div($i, 12)) - calc(#{cv.getVar("column-gap")} / 2)
       );
     }
@@ -150,57 +150,57 @@ $column-gap: 1.5rem !default;
   @include mx.mobile {
     &.#{iv.$class-prefix}is-narrow-mobile {
       flex: none;
-      width: unset;
+      inline-size: unset;
     }
 
     &.#{iv.$class-prefix}is-full-mobile {
       flex: none;
-      width: 100%;
+      inline-size: 100%;
     }
 
     &.#{iv.$class-prefix}is-three-quarters-mobile {
       flex: none;
-      width: calc(75% - calc(#{cv.getVar("column-gap")} / 2));
+      inline-size: calc(75% - calc(#{cv.getVar("column-gap")} / 2));
     }
 
     &.#{iv.$class-prefix}is-two-thirds-mobile {
       flex: none;
-      width: calc(66.6666% - calc(#{cv.getVar("column-gap")} / 2));
+      inline-size: calc(66.6666% - calc(#{cv.getVar("column-gap")} / 2));
     }
 
     &.#{iv.$class-prefix}is-half-mobile {
       flex: none;
-      width: calc(50% - calc(#{cv.getVar("column-gap")} / 2));
+      inline-size: calc(50% - calc(#{cv.getVar("column-gap")} / 2));
     }
 
     &.#{iv.$class-prefix}is-one-third-mobile {
       flex: none;
-      width: calc(33.3333% - calc(#{cv.getVar("column-gap")} / 2));
+      inline-size: calc(33.3333% - calc(#{cv.getVar("column-gap")} / 2));
     }
 
     &.#{iv.$class-prefix}is-one-quarter-mobile {
       flex: none;
-      width: calc(25% - calc(#{cv.getVar("column-gap")} / 2));
+      inline-size: calc(25% - calc(#{cv.getVar("column-gap")} / 2));
     }
 
     &.#{iv.$class-prefix}is-one-fifth-mobile {
       flex: none;
-      width: calc(20% - calc(#{cv.getVar("column-gap")} / 2));
+      inline-size: calc(20% - calc(#{cv.getVar("column-gap")} / 2));
     }
 
     &.#{iv.$class-prefix}is-two-fifths-mobile {
       flex: none;
-      width: calc(40% - calc(#{cv.getVar("column-gap")} / 2));
+      inline-size: calc(40% - calc(#{cv.getVar("column-gap")} / 2));
     }
 
     &.#{iv.$class-prefix}is-three-fifths-mobile {
       flex: none;
-      width: calc(60% - calc(#{cv.getVar("column-gap")} / 2));
+      inline-size: calc(60% - calc(#{cv.getVar("column-gap")} / 2));
     }
 
     &.#{iv.$class-prefix}is-four-fifths-mobile {
       flex: none;
-      width: calc(80% - calc(#{cv.getVar("column-gap")} / 2));
+      inline-size: calc(80% - calc(#{cv.getVar("column-gap")} / 2));
     }
 
     &.#{iv.$class-prefix}is-offset-three-quarters-mobile {
@@ -242,7 +242,7 @@ $column-gap: 1.5rem !default;
     @for $i from 0 through 12 {
       &.#{iv.$class-prefix}is-#{$i}-mobile {
         flex: none;
-        width: calc(
+        inline-size: calc(
           math.percentage(math.div($i, 12)) - calc(
               #{cv.getVar("column-gap")} / 2
             )
@@ -259,67 +259,67 @@ $column-gap: 1.5rem !default;
     &.#{iv.$class-prefix}is-narrow,
     &.#{iv.$class-prefix}is-narrow-tablet {
       flex: none;
-      width: unset;
+      inline-size: unset;
     }
 
     &.#{iv.$class-prefix}is-full,
     &.#{iv.$class-prefix}is-full-tablet {
       flex: none;
-      width: 100%;
+      inline-size: 100%;
     }
 
     &.#{iv.$class-prefix}is-three-quarters,
     &.#{iv.$class-prefix}is-three-quarters-tablet {
       flex: none;
-      width: calc(75% - calc(#{cv.getVar("column-gap")} / 2));
+      inline-size: calc(75% - calc(#{cv.getVar("column-gap")} / 2));
     }
 
     &.#{iv.$class-prefix}is-two-thirds,
     &.#{iv.$class-prefix}is-two-thirds-tablet {
       flex: none;
-      width: calc(66.6666% - calc(#{cv.getVar("column-gap")} / 2));
+      inline-size: calc(66.6666% - calc(#{cv.getVar("column-gap")} / 2));
     }
 
     &.#{iv.$class-prefix}is-half,
     &.#{iv.$class-prefix}is-half-tablet {
       flex: none;
-      width: calc(50% - calc(#{cv.getVar("column-gap")} / 2));
+      inline-size: calc(50% - calc(#{cv.getVar("column-gap")} / 2));
     }
 
     &.#{iv.$class-prefix}is-one-third,
     &.#{iv.$class-prefix}is-one-third-tablet {
       flex: none;
-      width: calc(33.3333% - calc(#{cv.getVar("column-gap")} / 2));
+      inline-size: calc(33.3333% - calc(#{cv.getVar("column-gap")} / 2));
     }
 
     &.#{iv.$class-prefix}is-one-quarter,
     &.#{iv.$class-prefix}is-one-quarter-tablet {
       flex: none;
-      width: calc(25% - calc(#{cv.getVar("column-gap")} / 2));
+      inline-size: calc(25% - calc(#{cv.getVar("column-gap")} / 2));
     }
 
     &.#{iv.$class-prefix}is-one-fifth,
     &.#{iv.$class-prefix}is-one-fifth-tablet {
       flex: none;
-      width: calc(20% - calc(#{cv.getVar("column-gap")} / 2));
+      inline-size: calc(20% - calc(#{cv.getVar("column-gap")} / 2));
     }
 
     &.#{iv.$class-prefix}is-two-fifths,
     &.#{iv.$class-prefix}is-two-fifths-tablet {
       flex: none;
-      width: calc(40% - calc(#{cv.getVar("column-gap")} / 2));
+      inline-size: calc(40% - calc(#{cv.getVar("column-gap")} / 2));
     }
 
     &.#{iv.$class-prefix}is-three-fifths,
     &.#{iv.$class-prefix}is-three-fifths-tablet {
       flex: none;
-      width: calc(60% - calc(#{cv.getVar("column-gap")} / 2));
+      inline-size: calc(60% - calc(#{cv.getVar("column-gap")} / 2));
     }
 
     &.#{iv.$class-prefix}is-four-fifths,
     &.#{iv.$class-prefix}is-four-fifths-tablet {
       flex: none;
-      width: calc(80% - calc(#{cv.getVar("column-gap")} / 2));
+      inline-size: calc(80% - calc(#{cv.getVar("column-gap")} / 2));
     }
 
     &.#{iv.$class-prefix}is-offset-three-quarters,
@@ -371,7 +371,7 @@ $column-gap: 1.5rem !default;
       &.#{iv.$class-prefix}is-#{$i},
       &.#{iv.$class-prefix}is-#{$i}-tablet {
         flex: none;
-        width: calc(
+        inline-size: calc(
           math.percentage(math.div($i, 12)) - calc(
               #{cv.getVar("column-gap")} / 2
             )
@@ -388,57 +388,57 @@ $column-gap: 1.5rem !default;
   @include mx.touch {
     &.#{iv.$class-prefix}is-narrow-touch {
       flex: none;
-      width: unset;
+      inline-size: unset;
     }
 
     &.#{iv.$class-prefix}is-full-touch {
       flex: none;
-      width: 100%;
+      inline-size: 100%;
     }
 
     &.#{iv.$class-prefix}is-three-quarters-touch {
       flex: none;
-      width: calc(75% - calc(#{cv.getVar("column-gap")} / 2));
+      inline-size: calc(75% - calc(#{cv.getVar("column-gap")} / 2));
     }
 
     &.#{iv.$class-prefix}is-two-thirds-touch {
       flex: none;
-      width: calc(66.6666% - calc(#{cv.getVar("column-gap")} / 2));
+      inline-size: calc(66.6666% - calc(#{cv.getVar("column-gap")} / 2));
     }
 
     &.#{iv.$class-prefix}is-half-touch {
       flex: none;
-      width: calc(50% - calc(#{cv.getVar("column-gap")} / 2));
+      inline-size: calc(50% - calc(#{cv.getVar("column-gap")} / 2));
     }
 
     &.#{iv.$class-prefix}is-one-third-touch {
       flex: none;
-      width: calc(33.3333% - calc(#{cv.getVar("column-gap")} / 2));
+      inline-size: calc(33.3333% - calc(#{cv.getVar("column-gap")} / 2));
     }
 
     &.#{iv.$class-prefix}is-one-quarter-touch {
       flex: none;
-      width: calc(25% - calc(#{cv.getVar("column-gap")} / 2));
+      inline-size: calc(25% - calc(#{cv.getVar("column-gap")} / 2));
     }
 
     &.#{iv.$class-prefix}is-one-fifth-touch {
       flex: none;
-      width: calc(20% - calc(#{cv.getVar("column-gap")} / 2));
+      inline-size: calc(20% - calc(#{cv.getVar("column-gap")} / 2));
     }
 
     &.#{iv.$class-prefix}is-two-fifths-touch {
       flex: none;
-      width: calc(40% - calc(#{cv.getVar("column-gap")} / 2));
+      inline-size: calc(40% - calc(#{cv.getVar("column-gap")} / 2));
     }
 
     &.#{iv.$class-prefix}is-three-fifths-touch {
       flex: none;
-      width: calc(60% - calc(#{cv.getVar("column-gap")} / 2));
+      inline-size: calc(60% - calc(#{cv.getVar("column-gap")} / 2));
     }
 
     &.#{iv.$class-prefix}is-four-fifths-touch {
       flex: none;
-      width: calc(80% - calc(#{cv.getVar("column-gap")} / 2));
+      inline-size: calc(80% - calc(#{cv.getVar("column-gap")} / 2));
     }
 
     &.#{iv.$class-prefix}is-offset-three-quarters-touch {
@@ -480,7 +480,7 @@ $column-gap: 1.5rem !default;
     @for $i from 0 through 12 {
       &.#{iv.$class-prefix}is-#{$i}-touch {
         flex: none;
-        width: math.percentage(math.div($i, 12));
+        inline-size: math.percentage(math.div($i, 12));
       }
 
       &.#{iv.$class-prefix}is-offset-#{$i}-touch {
@@ -492,57 +492,57 @@ $column-gap: 1.5rem !default;
   @include mx.desktop {
     &.#{iv.$class-prefix}is-narrow-desktop {
       flex: none;
-      width: unset;
+      inline-size: unset;
     }
 
     &.#{iv.$class-prefix}is-full-desktop {
       flex: none;
-      width: 100%;
+      inline-size: 100%;
     }
 
     &.#{iv.$class-prefix}is-three-quarters-desktop {
       flex: none;
-      width: calc(75% - calc(#{cv.getVar("column-gap")} / 2));
+      inline-size: calc(75% - calc(#{cv.getVar("column-gap")} / 2));
     }
 
     &.#{iv.$class-prefix}is-two-thirds-desktop {
       flex: none;
-      width: calc(66.6666% - calc(#{cv.getVar("column-gap")} / 2));
+      inline-size: calc(66.6666% - calc(#{cv.getVar("column-gap")} / 2));
     }
 
     &.#{iv.$class-prefix}is-half-desktop {
       flex: none;
-      width: calc(50% - calc(#{cv.getVar("column-gap")} / 2));
+      inline-size: calc(50% - calc(#{cv.getVar("column-gap")} / 2));
     }
 
     &.#{iv.$class-prefix}is-one-third-desktop {
       flex: none;
-      width: calc(33.3333% - calc(#{cv.getVar("column-gap")} / 2));
+      inline-size: calc(33.3333% - calc(#{cv.getVar("column-gap")} / 2));
     }
 
     &.#{iv.$class-prefix}is-one-quarter-desktop {
       flex: none;
-      width: calc(25% - calc(#{cv.getVar("column-gap")} / 2));
+      inline-size: calc(25% - calc(#{cv.getVar("column-gap")} / 2));
     }
 
     &.#{iv.$class-prefix}is-one-fifth-desktop {
       flex: none;
-      width: calc(20% - calc(#{cv.getVar("column-gap")} / 2));
+      inline-size: calc(20% - calc(#{cv.getVar("column-gap")} / 2));
     }
 
     &.#{iv.$class-prefix}is-two-fifths-desktop {
       flex: none;
-      width: calc(40% - calc(#{cv.getVar("column-gap")} / 2));
+      inline-size: calc(40% - calc(#{cv.getVar("column-gap")} / 2));
     }
 
     &.#{iv.$class-prefix}is-three-fifths-desktop {
       flex: none;
-      width: calc(60% - calc(#{cv.getVar("column-gap")} / 2));
+      inline-size: calc(60% - calc(#{cv.getVar("column-gap")} / 2));
     }
 
     &.#{iv.$class-prefix}is-four-fifths-desktop {
       flex: none;
-      width: calc(80% - calc(#{cv.getVar("column-gap")} / 2));
+      inline-size: calc(80% - calc(#{cv.getVar("column-gap")} / 2));
     }
 
     &.#{iv.$class-prefix}is-offset-three-quarters-desktop {
@@ -584,7 +584,7 @@ $column-gap: 1.5rem !default;
     @for $i from 0 through 12 {
       &.#{iv.$class-prefix}is-#{$i}-desktop {
         flex: none;
-        width: calc(
+        inline-size: calc(
           math.percentage(math.div($i, 12)) - calc(
               #{cv.getVar("column-gap")} / 2
             )
@@ -600,57 +600,57 @@ $column-gap: 1.5rem !default;
   @include mx.widescreen {
     &.#{iv.$class-prefix}is-narrow-widescreen {
       flex: none;
-      width: unset;
+      inline-size: unset;
     }
 
     &.#{iv.$class-prefix}is-full-widescreen {
       flex: none;
-      width: 100%;
+      inline-size: 100%;
     }
 
     &.#{iv.$class-prefix}is-three-quarters-widescreen {
       flex: none;
-      width: calc(75% - calc(#{cv.getVar("column-gap")} / 2));
+      inline-size: calc(75% - calc(#{cv.getVar("column-gap")} / 2));
     }
 
     &.#{iv.$class-prefix}is-two-thirds-widescreen {
       flex: none;
-      width: calc(66.6666% - calc(#{cv.getVar("column-gap")} / 2));
+      inline-size: calc(66.6666% - calc(#{cv.getVar("column-gap")} / 2));
     }
 
     &.#{iv.$class-prefix}is-half-widescreen {
       flex: none;
-      width: calc(50% - calc(#{cv.getVar("column-gap")} / 2));
+      inline-size: calc(50% - calc(#{cv.getVar("column-gap")} / 2));
     }
 
     &.#{iv.$class-prefix}is-one-third-widescreen {
       flex: none;
-      width: calc(33.3333% - calc(#{cv.getVar("column-gap")} / 2));
+      inline-size: calc(33.3333% - calc(#{cv.getVar("column-gap")} / 2));
     }
 
     &.#{iv.$class-prefix}is-one-quarter-widescreen {
       flex: none;
-      width: calc(25% - calc(#{cv.getVar("column-gap")} / 2));
+      inline-size: calc(25% - calc(#{cv.getVar("column-gap")} / 2));
     }
 
     &.#{iv.$class-prefix}is-one-fifth-widescreen {
       flex: none;
-      width: calc(20% - calc(#{cv.getVar("column-gap")} / 2));
+      inline-size: calc(20% - calc(#{cv.getVar("column-gap")} / 2));
     }
 
     &.#{iv.$class-prefix}is-two-fifths-widescreen {
       flex: none;
-      width: calc(40% - calc(#{cv.getVar("column-gap")} / 2));
+      inline-size: calc(40% - calc(#{cv.getVar("column-gap")} / 2));
     }
 
     &.#{iv.$class-prefix}is-three-fifths-widescreen {
       flex: none;
-      width: calc(60% - calc(#{cv.getVar("column-gap")} / 2));
+      inline-size: calc(60% - calc(#{cv.getVar("column-gap")} / 2));
     }
 
     &.#{iv.$class-prefix}is-four-fifths-widescreen {
       flex: none;
-      width: calc(80% - calc(#{cv.getVar("column-gap")} / 2));
+      inline-size: calc(80% - calc(#{cv.getVar("column-gap")} / 2));
     }
 
     &.#{iv.$class-prefix}is-offset-three-quarters-widescreen {
@@ -692,7 +692,7 @@ $column-gap: 1.5rem !default;
     @for $i from 0 through 12 {
       &.#{iv.$class-prefix}is-#{$i}-widescreen {
         flex: none;
-        width: calc(
+        inline-size: calc(
           math.percentage(math.div($i, 12)) - calc(
               #{cv.getVar("column-gap")} / 2
             )
@@ -708,57 +708,57 @@ $column-gap: 1.5rem !default;
   @include mx.fullhd {
     &.#{iv.$class-prefix}is-narrow-fullhd {
       flex: none;
-      width: unset;
+      inline-size: unset;
     }
 
     &.#{iv.$class-prefix}is-full-fullhd {
       flex: none;
-      width: 100%;
+      inline-size: 100%;
     }
 
     &.#{iv.$class-prefix}is-three-quarters-fullhd {
       flex: none;
-      width: calc(75% - calc(#{cv.getVar("column-gap")} / 2));
+      inline-size: calc(75% - calc(#{cv.getVar("column-gap")} / 2));
     }
 
     &.#{iv.$class-prefix}is-two-thirds-fullhd {
       flex: none;
-      width: calc(66.6666% - calc(#{cv.getVar("column-gap")} / 2));
+      inline-size: calc(66.6666% - calc(#{cv.getVar("column-gap")} / 2));
     }
 
     &.#{iv.$class-prefix}is-half-fullhd {
       flex: none;
-      width: calc(50% - calc(#{cv.getVar("column-gap")} / 2));
+      inline-size: calc(50% - calc(#{cv.getVar("column-gap")} / 2));
     }
 
     &.#{iv.$class-prefix}is-one-third-fullhd {
       flex: none;
-      width: calc(33.3333% - calc(#{cv.getVar("column-gap")} / 2));
+      inline-size: calc(33.3333% - calc(#{cv.getVar("column-gap")} / 2));
     }
 
     &.#{iv.$class-prefix}is-one-quarter-fullhd {
       flex: none;
-      width: calc(25% - calc(#{cv.getVar("column-gap")} / 2));
+      inline-size: calc(25% - calc(#{cv.getVar("column-gap")} / 2));
     }
 
     &.#{iv.$class-prefix}is-one-fifth-fullhd {
       flex: none;
-      width: calc(20% - calc(#{cv.getVar("column-gap")} / 2));
+      inline-size: calc(20% - calc(#{cv.getVar("column-gap")} / 2));
     }
 
     &.#{iv.$class-prefix}is-two-fifths-fullhd {
       flex: none;
-      width: calc(40% - calc(#{cv.getVar("column-gap")} / 2));
+      inline-size: calc(40% - calc(#{cv.getVar("column-gap")} / 2));
     }
 
     &.#{iv.$class-prefix}is-three-fifths-fullhd {
       flex: none;
-      width: calc(60% - calc(#{cv.getVar("column-gap")} / 2));
+      inline-size: calc(60% - calc(#{cv.getVar("column-gap")} / 2));
     }
 
     &.#{iv.$class-prefix}is-four-fifths-fullhd {
       flex: none;
-      width: calc(80% - calc(#{cv.getVar("column-gap")} / 2));
+      inline-size: calc(80% - calc(#{cv.getVar("column-gap")} / 2));
     }
 
     &.#{iv.$class-prefix}is-offset-three-quarters-fullhd {
@@ -800,7 +800,7 @@ $column-gap: 1.5rem !default;
     @for $i from 0 through 12 {
       &.#{iv.$class-prefix}is-#{$i}-fullhd {
         flex: none;
-        width: calc(
+        inline-size: calc(
           math.percentage(math.div($i, 12)) - calc(
               #{cv.getVar("column-gap")} / 2
             )

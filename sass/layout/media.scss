@@ -36,43 +36,43 @@ $media-level-2-spacing: 0.5rem !default;
   text-align: inherit;
 
   .#{iv.$class-prefix}content:not(:last-child) {
-    margin-bottom: cv.getVar("media-content-spacing");
+    margin-block-end: cv.getVar("media-content-spacing");
   }
 
   .#{iv.$class-prefix}media {
-    border-top-color: cv.getVar("media-border-color");
-    border-top-style: solid;
-    border-top-width: cv.getVar("media-border-size");
+    border-block-start-color: cv.getVar("media-border-color");
+    border-block-start-style: solid;
+    border-block-start-size: cv.getVar("media-border-size");
     display: flex;
-    padding-top: cv.getVar("media-level-1-spacing");
+    padding-block-start: cv.getVar("media-level-1-spacing");
 
     .#{iv.$class-prefix}content:not(:last-child),
     .#{iv.$class-prefix}control:not(:last-child) {
-      margin-bottom: cv.getVar("media-level-1-content-spacing");
+      margin-block-end: cv.getVar("media-level-1-content-spacing");
     }
 
     .#{iv.$class-prefix}media {
-      padding-top: cv.getVar("media-level-2-spacing");
+      padding-block-start: cv.getVar("media-level-2-spacing");
 
       & + .#{iv.$class-prefix}media {
-        margin-top: cv.getVar("media-level-2-spacing");
+        margin-block-start: cv.getVar("media-level-2-spacing");
       }
     }
   }
 
   & + .#{iv.$class-prefix}media {
-    border-top-color: cv.getVar("media-border-color");
-    border-top-style: solid;
-    border-top-width: cv.getVar("media-border-size");
-    margin-top: cv.getVar("media-spacing");
-    padding-top: cv.getVar("media-spacing");
+    border-block-start-color: cv.getVar("media-border-color");
+    border-block-start-style: solid;
+    border-block-start-width: cv.getVar("media-border-size");
+    margin-block-start: cv.getVar("media-spacing");
+    padding-block-start: cv.getVar("media-spacing");
   }
 
   // Sizes
   &.#{iv.$class-prefix}is-large {
     & + .#{iv.$class-prefix}media {
-      margin-top: cv.getVar("media-spacing-large");
-      padding-top: cv.getVar("media-spacing-large");
+      margin-block-start: cv.getVar("media-spacing-large");
+      padding-block-start: cv.getVar("media-spacing-large");
     }
   }
 }

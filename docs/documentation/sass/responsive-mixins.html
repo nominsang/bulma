@@ -1,9 +1,9 @@
 ---
-title: Bulma Sass Responsive Mixins
+title: Bulma Sass 自适应混入
 layout: docs
 theme: sass
 doc-tab: sass
-doc-subtab: responsive-mixins
+doc-subtab: 自适应混入
 breadcrumb:
   - home
   - documentation
@@ -13,42 +13,42 @@ breadcrumb:
 
 <div class="content">
   <p>
-    Bulma is <strong>responsive by default</strong>. <a href="{{ site.url}}/documentation/overview/responsiveness/">Learn more about Bulma's responsiveness</a>.
+    Bulma <strong>默认自适应</strong>。<a href="{{ site.url}}/documentation/start/responsiveness/">了解更多有关 Bulma 的自适应</a>。
   </p>
 </div>
 
-{% include docs/elements/anchor.html name="from() and until() mixins" %}
+{% include docs/elements/anchor.html name="from() 和 until() 混入" %}
 
 <div class="content">
   <p>
-    Responsiveness in CSS is based on <strong>media queries</strong> (see <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries/Using_media_queries" target="_blank">MDN documentation</a>).
+    CSS 的自适应是基于<strong>媒体查询（Media Query）</strong>的（参考 <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries/Using_media_queries" target="_blank">MDN 文档</a>）。
   </p>
 
   <p>
-    Bulma provides <strong>2 useful responsive mixins:</strong>
+    Bulma 提供了 <strong>2 种有用的自适应混入：</strong>
   </p>
 
   <ul>
     <li>
-      {% include docs/elements/snippet-inline.html content="@mixin from($breakpoint)" %} to target devices with a screen <em>wider</em> than or equal to the breakpoint
+      {% include docs/elements/snippet-inline.html content="@mixin from($breakpoint)" %} 针对设备屏幕<em>宽于</em>或者等于断点的
     </li>
     <li>
-      {% include docs/elements/snippet-inline.html content="@mixin until($breakpoint)" %} to target devices with a screen <em>narrower</em> than the breakpoint
+      {% include docs/elements/snippet-inline.html content="@mixin until($breakpoint)" %} 者对设备屏幕<em>窄于</em>断点的
     </li>
   </ul>
 
-  <p>Their usage is very simple:</p>
+  <p>用法很简单：</p>
 </div>
 
 {% include docs/elements/anchor-bis.html name="from()" %}
 
 <div class="content">
   <p>
-    The <code>from()</code> mixin has a single parameter which sets the <strong>screen width</strong> from which the styles it contains will be applied:
+    <code>from()</code> 混入有一个设置<strong>屏幕宽度</strong>的参数，从该宽度开始，样式将被应用：
   </p>
 </div>
 
-<p class="title is-6">Sass source</p>
+<p class="title is-6">Sass 源码</p>
 
 {% highlight sass %}@use "bulma/sass/utilities/mixins";
 
@@ -60,7 +60,7 @@ breadcrumb:
   }
 }{% endhighlight %}
 
-<p class="title is-6">CSS output</p>
+<p class="title is-6">CSS 输出</p>
 
 {% highlight css %}.my-element {
   background: red;
@@ -74,9 +74,9 @@ breadcrumb:
 
 <div class="content">
   <p>
-    For screens with a width of 1279px or less, the element's background will be <strong style="color: red;">red</strong>.
+    屏幕宽度小于 1279px 时，元素背景是 <strong style="color: red;">红色（red）</strong>的。
     <br>
-    For screens 1280px-wide or more, the element's background will be <strong style="color: blue;">blue</strong>.
+    屏幕宽度大于 1280px 时，元素背景是 <strong style="color: blue;">蓝色（blue）</strong>的。
   </p>
 </div>
 

@@ -25,67 +25,67 @@ $column-gap: 0.75rem !default;
   .#{iv.$class-prefix}columns.#{iv.$class-prefix}is-mobile
     > &.#{iv.$class-prefix}is-narrow {
     flex: none;
-    width: unset;
+    inline-size: unset;
   }
 
   .#{iv.$class-prefix}columns.#{iv.$class-prefix}is-mobile
     > &.#{iv.$class-prefix}is-full {
     flex: none;
-    width: 100%;
+    inline-size: 100%;
   }
 
   .#{iv.$class-prefix}columns.#{iv.$class-prefix}is-mobile
     > &.#{iv.$class-prefix}is-three-quarters {
     flex: none;
-    width: 75%;
+    inline-size: 75%;
   }
 
   .#{iv.$class-prefix}columns.#{iv.$class-prefix}is-mobile
     > &.#{iv.$class-prefix}is-two-thirds {
     flex: none;
-    width: 66.6666%;
+    inline-size: 66.6666%;
   }
 
   .#{iv.$class-prefix}columns.#{iv.$class-prefix}is-mobile
     > &.#{iv.$class-prefix}is-half {
     flex: none;
-    width: 50%;
+    inline-size: 50%;
   }
 
   .#{iv.$class-prefix}columns.#{iv.$class-prefix}is-mobile
     > &.#{iv.$class-prefix}is-one-third {
     flex: none;
-    width: 33.3333%;
+    inline-size: 33.3333%;
   }
 
   .#{iv.$class-prefix}columns.#{iv.$class-prefix}is-mobile
     > &.#{iv.$class-prefix}is-one-quarter {
     flex: none;
-    width: 25%;
+    inline-size: 25%;
   }
 
   .#{iv.$class-prefix}columns.#{iv.$class-prefix}is-mobile
     > &.#{iv.$class-prefix}is-one-fifth {
     flex: none;
-    width: 20%;
+    inline-size: 20%;
   }
 
   .#{iv.$class-prefix}columns.#{iv.$class-prefix}is-mobile
     > &.#{iv.$class-prefix}is-two-fifths {
     flex: none;
-    width: 40%;
+    inline-size: 40%;
   }
 
   .#{iv.$class-prefix}columns.#{iv.$class-prefix}is-mobile
     > &.#{iv.$class-prefix}is-three-fifths {
     flex: none;
-    width: 60%;
+    inline-size: 60%;
   }
 
   .#{iv.$class-prefix}columns.#{iv.$class-prefix}is-mobile
     > &.#{iv.$class-prefix}is-four-fifths {
     flex: none;
-    width: 80%;
+    inline-size: 80%;
   }
 
   .#{iv.$class-prefix}columns.#{iv.$class-prefix}is-mobile
@@ -137,7 +137,7 @@ $column-gap: 0.75rem !default;
     .#{iv.$class-prefix}columns.#{iv.$class-prefix}is-mobile
       > &.#{iv.$class-prefix}is-#{$i} {
       flex: none;
-      width: calc(
+      inline-size: calc(
         math.percentage(math.div($i, 12)) - calc(#{cv.getVar("column-gap")} / 2)
       );
     }
@@ -151,57 +151,57 @@ $column-gap: 0.75rem !default;
   @include mx.mobile {
     &.#{iv.$class-prefix}is-narrow-mobile {
       flex: none;
-      width: unset;
+      inline-size: unset;
     }
 
     &.#{iv.$class-prefix}is-full-mobile {
       flex: none;
-      width: 100%;
+      inline-size: 100%;
     }
 
     &.#{iv.$class-prefix}is-three-quarters-mobile {
       flex: none;
-      width: 75%;
+      inline-size: 75%;
     }
 
     &.#{iv.$class-prefix}is-two-thirds-mobile {
       flex: none;
-      width: 66.6666%;
+      inline-size: 66.6666%;
     }
 
     &.#{iv.$class-prefix}is-half-mobile {
       flex: none;
-      width: 50%;
+      inline-size: 50%;
     }
 
     &.#{iv.$class-prefix}is-one-third-mobile {
       flex: none;
-      width: 33.3333%;
+      inline-size: 33.3333%;
     }
 
     &.#{iv.$class-prefix}is-one-quarter-mobile {
       flex: none;
-      width: 25%;
+      inline-size: 25%;
     }
 
     &.#{iv.$class-prefix}is-one-fifth-mobile {
       flex: none;
-      width: 20%;
+      inline-size: 20%;
     }
 
     &.#{iv.$class-prefix}is-two-fifths-mobile {
       flex: none;
-      width: 40%;
+      inline-size: 40%;
     }
 
     &.#{iv.$class-prefix}is-three-fifths-mobile {
       flex: none;
-      width: 60%;
+      inline-size: 60%;
     }
 
     &.#{iv.$class-prefix}is-four-fifths-mobile {
       flex: none;
-      width: 80%;
+      inline-size: 80%;
     }
 
     &.#{iv.$class-prefix}is-offset-three-quarters-mobile {
@@ -243,7 +243,7 @@ $column-gap: 0.75rem !default;
     @for $i from 0 through 12 {
       &.#{iv.$class-prefix}is-#{$i}-mobile {
         flex: none;
-        width: calc(
+        inline-size: calc(
           math.percentage(math.div($i, 12)) - calc(
               #{cv.getVar("column-gap")} / 2
             )
@@ -260,67 +260,67 @@ $column-gap: 0.75rem !default;
     &.#{iv.$class-prefix}is-narrow,
     &.#{iv.$class-prefix}is-narrow-tablet {
       flex: none;
-      width: unset;
+      inline-size: unset;
     }
 
     &.#{iv.$class-prefix}is-full,
     &.#{iv.$class-prefix}is-full-tablet {
       flex: none;
-      width: 100%;
+      inline-size: 100%;
     }
 
     &.#{iv.$class-prefix}is-three-quarters,
     &.#{iv.$class-prefix}is-three-quarters-tablet {
       flex: none;
-      width: 75%;
+      inline-size: 75%;
     }
 
     &.#{iv.$class-prefix}is-two-thirds,
     &.#{iv.$class-prefix}is-two-thirds-tablet {
       flex: none;
-      width: 66.6666%;
+      inline-size: 66.6666%;
     }
 
     &.#{iv.$class-prefix}is-half,
     &.#{iv.$class-prefix}is-half-tablet {
       flex: none;
-      width: 50%;
+      inline-size: 50%;
     }
 
     &.#{iv.$class-prefix}is-one-third,
     &.#{iv.$class-prefix}is-one-third-tablet {
       flex: none;
-      width: 33.3333%;
+      inline-size: 33.3333%;
     }
 
     &.#{iv.$class-prefix}is-one-quarter,
     &.#{iv.$class-prefix}is-one-quarter-tablet {
       flex: none;
-      width: 25%;
+      inline-size: 25%;
     }
 
     &.#{iv.$class-prefix}is-one-fifth,
     &.#{iv.$class-prefix}is-one-fifth-tablet {
       flex: none;
-      width: 20%;
+      inline-size: 20%;
     }
 
     &.#{iv.$class-prefix}is-two-fifths,
     &.#{iv.$class-prefix}is-two-fifths-tablet {
       flex: none;
-      width: 40%;
+      inline-size: 40%;
     }
 
     &.#{iv.$class-prefix}is-three-fifths,
     &.#{iv.$class-prefix}is-three-fifths-tablet {
       flex: none;
-      width: 60%;
+      inline-size: 60%;
     }
 
     &.#{iv.$class-prefix}is-four-fifths,
     &.#{iv.$class-prefix}is-four-fifths-tablet {
       flex: none;
-      width: 80%;
+      inline-size: 80%;
     }
 
     &.#{iv.$class-prefix}is-offset-three-quarters,
@@ -372,7 +372,7 @@ $column-gap: 0.75rem !default;
       &.#{iv.$class-prefix}is-#{$i},
       &.#{iv.$class-prefix}is-#{$i}-tablet {
         flex: none;
-        width: calc(
+        inline-size: calc(
           math.percentage(math.div($i, 12)) - calc(
               #{cv.getVar("column-gap")} / 2
             )
@@ -389,57 +389,57 @@ $column-gap: 0.75rem !default;
   @include mx.touch {
     &.#{iv.$class-prefix}is-narrow-touch {
       flex: none;
-      width: unset;
+      inline-size: unset;
     }
 
     &.#{iv.$class-prefix}is-full-touch {
       flex: none;
-      width: 100%;
+      inline-size: 100%;
     }
 
     &.#{iv.$class-prefix}is-three-quarters-touch {
       flex: none;
-      width: 75%;
+      inline-size: 75%;
     }
 
     &.#{iv.$class-prefix}is-two-thirds-touch {
       flex: none;
-      width: 66.6666%;
+      inline-size: 66.6666%;
     }
 
     &.#{iv.$class-prefix}is-half-touch {
       flex: none;
-      width: 50%;
+      inline-size: 50%;
     }
 
     &.#{iv.$class-prefix}is-one-third-touch {
       flex: none;
-      width: 33.3333%;
+      inline-size: 33.3333%;
     }
 
     &.#{iv.$class-prefix}is-one-quarter-touch {
       flex: none;
-      width: 25%;
+      inline-size: 25%;
     }
 
     &.#{iv.$class-prefix}is-one-fifth-touch {
       flex: none;
-      width: 20%;
+      inline-size: 20%;
     }
 
     &.#{iv.$class-prefix}is-two-fifths-touch {
       flex: none;
-      width: 40%;
+      inline-size: 40%;
     }
 
     &.#{iv.$class-prefix}is-three-fifths-touch {
       flex: none;
-      width: 60%;
+      inline-size: 60%;
     }
 
     &.#{iv.$class-prefix}is-four-fifths-touch {
       flex: none;
-      width: 80%;
+      inline-size: 80%;
     }
 
     &.#{iv.$class-prefix}is-offset-three-quarters-touch {
@@ -481,7 +481,7 @@ $column-gap: 0.75rem !default;
     @for $i from 0 through 12 {
       &.#{iv.$class-prefix}is-#{$i}-touch {
         flex: none;
-        width: math.percentage(math.div($i, 12));
+        inline-size: math.percentage(math.div($i, 12));
       }
 
       &.#{iv.$class-prefix}is-offset-#{$i}-touch {
@@ -493,57 +493,57 @@ $column-gap: 0.75rem !default;
   @include mx.desktop {
     &.#{iv.$class-prefix}is-narrow-desktop {
       flex: none;
-      width: unset;
+      inline-size: unset;
     }
 
     &.#{iv.$class-prefix}is-full-desktop {
       flex: none;
-      width: 100%;
+      inline-size: 100%;
     }
 
     &.#{iv.$class-prefix}is-three-quarters-desktop {
       flex: none;
-      width: 75%;
+      inline-size: 75%;
     }
 
     &.#{iv.$class-prefix}is-two-thirds-desktop {
       flex: none;
-      width: 66.6666%;
+      inline-size: 66.6666%;
     }
 
     &.#{iv.$class-prefix}is-half-desktop {
       flex: none;
-      width: 50%;
+      inline-size: 50%;
     }
 
     &.#{iv.$class-prefix}is-one-third-desktop {
       flex: none;
-      width: 33.3333%;
+      inline-size: 33.3333%;
     }
 
     &.#{iv.$class-prefix}is-one-quarter-desktop {
       flex: none;
-      width: 25%;
+      inline-size: 25%;
     }
 
     &.#{iv.$class-prefix}is-one-fifth-desktop {
       flex: none;
-      width: 20%;
+      inline-size: 20%;
     }
 
     &.#{iv.$class-prefix}is-two-fifths-desktop {
       flex: none;
-      width: 40%;
+      inline-size: 40%;
     }
 
     &.#{iv.$class-prefix}is-three-fifths-desktop {
       flex: none;
-      width: 60%;
+      inline-size: 60%;
     }
 
     &.#{iv.$class-prefix}is-four-fifths-desktop {
       flex: none;
-      width: 80%;
+      inline-size: 80%;
     }
 
     &.#{iv.$class-prefix}is-offset-three-quarters-desktop {
@@ -585,7 +585,7 @@ $column-gap: 0.75rem !default;
     @for $i from 0 through 12 {
       &.#{iv.$class-prefix}is-#{$i}-desktop {
         flex: none;
-        width: calc(
+        inline-size: calc(
           math.percentage(math.div($i, 12)) - calc(
               #{cv.getVar("column-gap")} / 2
             )
@@ -601,57 +601,57 @@ $column-gap: 0.75rem !default;
   @include mx.widescreen {
     &.#{iv.$class-prefix}is-narrow-widescreen {
       flex: none;
-      width: unset;
+      inline-size: unset;
     }
 
     &.#{iv.$class-prefix}is-full-widescreen {
       flex: none;
-      width: 100%;
+      inline-size: 100%;
     }
 
     &.#{iv.$class-prefix}is-three-quarters-widescreen {
       flex: none;
-      width: 75%;
+      inline-size: 75%;
     }
 
     &.#{iv.$class-prefix}is-two-thirds-widescreen {
       flex: none;
-      width: 66.6666%;
+      inline-size: 66.6666%;
     }
 
     &.#{iv.$class-prefix}is-half-widescreen {
       flex: none;
-      width: 50%;
+      inline-size: 50%;
     }
 
     &.#{iv.$class-prefix}is-one-third-widescreen {
       flex: none;
-      width: 33.3333%;
+      inline-size: 33.3333%;
     }
 
     &.#{iv.$class-prefix}is-one-quarter-widescreen {
       flex: none;
-      width: 25%;
+      inline-size: 25%;
     }
 
     &.#{iv.$class-prefix}is-one-fifth-widescreen {
       flex: none;
-      width: 20%;
+      inline-size: 20%;
     }
 
     &.#{iv.$class-prefix}is-two-fifths-widescreen {
       flex: none;
-      width: 40%;
+      inline-size: 40%;
     }
 
     &.#{iv.$class-prefix}is-three-fifths-widescreen {
       flex: none;
-      width: 60%;
+      inline-size: 60%;
     }
 
     &.#{iv.$class-prefix}is-four-fifths-widescreen {
       flex: none;
-      width: 80%;
+      inline-size: 80%;
     }
 
     &.#{iv.$class-prefix}is-offset-three-quarters-widescreen {
@@ -693,7 +693,7 @@ $column-gap: 0.75rem !default;
     @for $i from 0 through 12 {
       &.#{iv.$class-prefix}is-#{$i}-widescreen {
         flex: none;
-        width: calc(
+        inline-size: calc(
           math.percentage(math.div($i, 12)) - calc(
               #{cv.getVar("column-gap")} / 2
             )
@@ -709,57 +709,57 @@ $column-gap: 0.75rem !default;
   @include mx.fullhd {
     &.#{iv.$class-prefix}is-narrow-fullhd {
       flex: none;
-      width: unset;
+      inline-size: unset;
     }
 
     &.#{iv.$class-prefix}is-full-fullhd {
       flex: none;
-      width: 100%;
+      inline-size: 100%;
     }
 
     &.#{iv.$class-prefix}is-three-quarters-fullhd {
       flex: none;
-      width: 75%;
+      inline-size: 75%;
     }
 
     &.#{iv.$class-prefix}is-two-thirds-fullhd {
       flex: none;
-      width: 66.6666%;
+      inline-size: 66.6666%;
     }
 
     &.#{iv.$class-prefix}is-half-fullhd {
       flex: none;
-      width: 50%;
+      inline-size: 50%;
     }
 
     &.#{iv.$class-prefix}is-one-third-fullhd {
       flex: none;
-      width: 33.3333%;
+      inline-size: 33.3333%;
     }
 
     &.#{iv.$class-prefix}is-one-quarter-fullhd {
       flex: none;
-      width: 25%;
+      inline-size: 25%;
     }
 
     &.#{iv.$class-prefix}is-one-fifth-fullhd {
       flex: none;
-      width: 20%;
+      inline-size: 20%;
     }
 
     &.#{iv.$class-prefix}is-two-fifths-fullhd {
       flex: none;
-      width: 40%;
+      inline-size: 40%;
     }
 
     &.#{iv.$class-prefix}is-three-fifths-fullhd {
       flex: none;
-      width: 60%;
+      inline-size: 60%;
     }
 
     &.#{iv.$class-prefix}is-four-fifths-fullhd {
       flex: none;
-      width: 80%;
+      inline-size: 80%;
     }
 
     &.#{iv.$class-prefix}is-offset-three-quarters-fullhd {
@@ -801,7 +801,7 @@ $column-gap: 0.75rem !default;
     @for $i from 0 through 12 {
       &.#{iv.$class-prefix}is-#{$i}-fullhd {
         flex: none;
-        width: math.percentage(math.div($i, 12));
+        inline-size: math.percentage(math.div($i, 12));
       }
 
       &.#{iv.$class-prefix}is-offset-#{$i}-fullhd {
@@ -814,14 +814,14 @@ $column-gap: 0.75rem !default;
 .#{iv.$class-prefix}columns {
   margin-inline-start: calc(-1 * #{cv.getVar("column-gap")});
   margin-inline-end: calc(-1 * #{cv.getVar("column-gap")});
-  margin-top: calc(-1 * #{cv.getVar("column-gap")});
+  margin-block-start: calc(-1 * #{cv.getVar("column-gap")});
 
   &:last-child {
-    margin-bottom: calc(-1 * #{cv.getVar("column-gap")});
+    margin-block-end: calc(-1 * #{cv.getVar("column-gap")});
   }
 
   &:not(:last-child) {
-    margin-bottom: calc(1.5rem - #{$column-gap});
+    margin-block-end: calc(1.5rem - #{$column-gap});
   }
 
   // Modifiers
@@ -833,7 +833,7 @@ $column-gap: 0.75rem !default;
     margin-inline-start: 0;
     margin-inline-end: 0;
 
-    margin-top: 0;
+    margin-block-start: 0;
 
     & > .#{iv.$class-prefix}column {
       margin: 0;
@@ -841,11 +841,11 @@ $column-gap: 0.75rem !default;
     }
 
     &:not(:last-child) {
-      margin-bottom: 1.5rem;
+      margin-block-end: 1.5rem;
     }
 
     &:last-child {
-      margin-bottom: 0;
+      margin-block-end: 0;
     }
   }
 

@@ -6,24 +6,25 @@ $container-max-width: iv.$fullhd !default;
 
 .#{iv.$class-prefix}container {
   flex-grow: 1;
-  margin: 0 auto;
+  margin-block: 0;
+  margin-inline: auto;
   position: relative;
-  width: 100%;
+  inline-size: 100%;
 
   &.#{iv.$class-prefix}is-fluid {
-    max-width: none !important;
-    padding-left: iv.$gap;
-    padding-right: iv.$gap;
-    width: 100%;
+    max-inline-size: none !important;
+    padding-inline-start: iv.$gap;
+    padding-inline-end: iv.$gap;
+    inline-size: 100%;
   }
 
   @include mx.desktop {
-    max-width: iv.$desktop - $container-offset;
+    max-inline-size: iv.$desktop - $container-offset;
   }
 
   @include mx.until-widescreen {
     &.#{iv.$class-prefix}is-widescreen:not(.#{iv.$class-prefix}is-max-desktop) {
-      max-width: min(iv.$widescreen, $container-max-width) - $container-offset;
+      max-inline-size: min(iv.$widescreen, $container-max-width) - $container-offset;
     }
   }
 
@@ -31,13 +32,13 @@ $container-max-width: iv.$fullhd !default;
     &.#{iv.$class-prefix}is-fullhd:not(.#{iv.$class-prefix}is-max-desktop):not(
         .#{iv.$class-prefix}is-max-widescreen
       ) {
-      max-width: min(iv.$fullhd, $container-max-width) - $container-offset;
+      max-inline-size: min(iv.$fullhd, $container-max-width) - $container-offset;
     }
   }
 
   @include mx.widescreen {
     &:not(.#{iv.$class-prefix}is-max-desktop) {
-      max-width: min(iv.$widescreen, $container-max-width) - $container-offset;
+      max-inline-size: min(iv.$widescreen, $container-max-width) - $container-offset;
     }
   }
 
@@ -45,7 +46,7 @@ $container-max-width: iv.$fullhd !default;
     &:not(.#{iv.$class-prefix}is-max-desktop):not(
         .#{iv.$class-prefix}is-max-widescreen
       ) {
-      max-width: min(iv.$fullhd, $container-max-width) - $container-offset;
+      max-inline-size: min(iv.$fullhd, $container-max-width) - $container-offset;
     }
   }
 }
